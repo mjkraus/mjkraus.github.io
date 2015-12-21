@@ -21,7 +21,6 @@ var newArray = [];
 var findColor = function(){
 	var color = colorArray[Math.floor(Math.random() * colorArray.length)];
 	newArray.push(color);
-	console.log(newArray);
 	$( '#start-btn' ).off('mousedown');
 	loopThroughColors();
 }
@@ -65,7 +64,6 @@ var x=0;
 var rounds = 0
 var compare = function(select){
 	if(newArray[x] !== select){
-		console.log('game over');
 		$('#gameOver').css('display', 'block');
 		$('#restart-btn').css('display', 'block');
 		$('#restart-btn').mousedown(function(){
@@ -77,7 +75,6 @@ var compare = function(select){
 		})
 		}else if(newArray[x] === select){
 			x++;
-			console.log('yay')
 				if(x>newArray.length-1){
 					findColor();
 					x=0;
