@@ -4,11 +4,10 @@ body{
 	color: #faf0e9;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20pt;
+	text-align: center;
 }
 
 h1{
-	text-align: center;
-	color: #faf0e9;
 	font-size: 40pt;
 }
 
@@ -34,65 +33,54 @@ h1{
 	font-size: 40pt;
 }
 
-p#restart-btn{
+.button{
 	width: 150px;
 	position: absolute;
+	cursor: pointer;
+	border:5px solid;
+	border-color: #faf0e9;
+	background-color: #e9baba; 
+
+}
+
+#restart-btn{
 	display: none;
 	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	cursor: pointer;
-	border:5px solid;
-	border-color: #faf0e9;
-	text-align: center;
-	background-color: #e9baba; 
-}
-
-#purple{
-	position: absolute; 
-	top: 0px; 
-	left: 50%;
-	display: block;
-	max-width: 100%;
-    height: auto;
-}
-
-#blue{
-	position: absolute; 
-	top: 50%; 
-	left: 50%;
-	display: block;
-	max-width: 100%;
-    height: auto;
-}
-
-#green{
-	position: absolute; 
-	top: 50%; 
-	left: 0px;
-	display: block;
-	max-width: 100%;
-    height: auto;
-}
-
-#red{
-	position: absolute; 
-	top: 0px; 
-	left: 0px;
-	display: block;
-	max-width: 100%;
-    height: auto;
 }
 
 #start-btn{
-	position: absolute;
-	cursor: pointer;
-	border:5px solid;
-	border-color: #faf0e9;
-	width: 150px;
 	top:25%;
 	left: 77%;
-	text-align: center;
+}
+
+.gamepiece{
+	position: absolute; 
+	display: block;
+	max-width: 100%;
+    height: auto;
+
+}
+
+#purple{
+	top: 0px; 
+	left: 50%;
+}
+
+#blue{
+	top: 50%; 
+	left: 50%;
+}
+
+#green{
+	top: 50%; 
+	left: 0px;
+}
+
+#red{
+	top: 0px; 
+	left: 0px;
 }
 
 #scoreboard{
@@ -102,7 +90,6 @@ p#restart-btn{
 	top:35%;
 	width: 150px;
 	left: 77%;
-	text-align: center;
 	line-height: 1em;
 }
 
