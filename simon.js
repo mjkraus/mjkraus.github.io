@@ -28,7 +28,7 @@ $( "#start-btn" ).mouseup(function() {
 
 var colorArray = ['purple','blue','green','red'];
 
-var colorTiles = [$('img#purple'),$('img#blue'),$('img#green'),$('img#red')];
+var colorTiles = [$('.purple'),$('.blue'),$('.green'),$('.red')];
 
 var newArray = [];
 

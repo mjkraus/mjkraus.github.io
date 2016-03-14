@@ -68,42 +68,49 @@ Quarter Circles*/
 	box-shadow:10px 10px 20px grey;
 /*	transition:background-color 0.2s ease-in-out;*/
 }
+
 /*Red Quarter*/
-.quarter1 {
+.red {
 	top:0;
 	left:0;
 	background-color:#b51c17;
 /*creates the curve for the edges of the piece*/
 	border-radius:100% 0 0 0;
 }
-.quarter1:hover {
+.red:hover {
 	background-color:#f46b6b;
 }
-.quarter2 {
+
+/*Purple Quarter*/
+.purple {
 	top:0;
 	right:0;
 	background-color:#58294d;
 	border-radius:0 100% 0 0 ;
 }
-.quarter2:hover {
+.purple:hover {
 	background-color:#ae6ba2;
 }
-.quarter3 {
+
+/*Blue Quarter*/
+.blue {
 	bottom:0;
 	left:0;
 	background-color:#615a28;
 	border-radius:0 0 0 100%;
 }
-.quarter3:hover {
+.blue:hover {
 	background-color:#a99f6b;
 }
-.quarter4 {
+
+/*Green Quarter*/
+.green {
 	bottom:0;
 	right:0;
 	background-color:#254873;
 	border-radius:0 0 100% 0 ;
 }
-.quarter4:hover {
+.green:hover {
 	background-color:#6b93b6;
 }
 /*.cutout {
@@ -117,6 +124,8 @@ Quarter Circles*/
 	pointer-events:none;
 	}*/
 
+
+/*Scoreboard*/
 #scoreboard{
 	position: absolute;
 	border:5px solid;
