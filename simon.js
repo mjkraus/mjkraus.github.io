@@ -76,7 +76,9 @@ var rounds = 0
 //compares click to randomly generated color array.
 var compare = function(select){ 
 	if(newArray[x] !== select){
-		$('#gameOver').css('display', 'block'); //if not === then game over and reset button appear change color on click
+		$('#myModal').modal('show'); 
+		// $('#gameOver').css('display', 'block');
+		// $('#gameOver').css('display', 'block'); //if not === then game over and reset button appear change color on click
 		$('#restart-btn').css('display', 'block'); //refreshes page when reset is clicked
 		$('#restart-btn').mousedown(function(){
 			$(this).css('background-color','#c59e9e');
@@ -95,6 +97,6 @@ var compare = function(select){
 
 				}
     		}
-    	}
+    	}   	    	
 
 })();

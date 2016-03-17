@@ -11,55 +11,26 @@ h1{
 	font-size: 40pt;
 }
 
-#background{
-	position: relative;
-	max-width: 680px;
-    height: 680px;
-    left:25%;
-}
-
-#gameOver{
-	position: absolute;
-	display: none;
-	top: 30%;
-	left: 50%;
-	transform: translate(-54%, -50%);
-	font-size: 40pt;
-}
-
-/*.button{
-	width: 150px;
-	position: absolute;
+.button{
 	cursor: pointer;
-	border:5px solid;
-	border-color: #faf0e9;
+	border:5px solid #faf0e9;
 	background-color: #e9baba; 
-
-}*/
-
-#restart-btn{
-	display: none;
-	top: 46%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
-/*#start-btn{
-	top:25%;
-	left: 77%;
-}*/
+.button:hover{
+	background-color: #c59e9e;
+}
 
 /*game piece found on http://dabblet.com/gist/5476973
-edited the original to be my own design
+edited the original to be my own design*/
 
-Quarter Circles*/
-
+/*Game Board*/
 .main{
 	position:relative;
 	/* ratio 1:1 keeps Simon board square with bootstrap responsive design*/
+	/*http://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css*/
 	width: 100%;
 	padding-bottom: 100%;
-
 }
 
 .quarter {
@@ -79,7 +50,8 @@ Quarter Circles*/
 	border-radius:100% 0 0 0;
 }
 .red:hover {
-	background-color:#f46b6b;
+	opacity: 0.5;	
+/*	background-color:#f46b6b;*/
 }
 
 /*Purple Quarter*/
@@ -90,7 +62,8 @@ Quarter Circles*/
 	border-radius:0 100% 0 0 ;
 }
 .purple:hover {
-	background-color:#ae6ba2;
+	opacity: 0.5;	
+/*	background-color:#ae6ba2;*/
 }
 
 /*Blue Quarter*/
@@ -101,7 +74,8 @@ Quarter Circles*/
 	border-radius:0 0 0 100%;
 }
 .blue:hover {
-	background-color:#a99f6b;
+	opacity: 0.5;	
+/*	background-color:#a99f6b;*/
 }
 
 /*Green Quarter*/
@@ -112,33 +86,35 @@ Quarter Circles*/
 	border-radius:0 0 100% 0 ;
 }
 .green:hover {
-	background-color:#6b93b6;
+	opacity: 0.5;
+/*	background-color:#6b93b6;*/
 }
-/*.cutout {
-	width:50%;
-	height:50%;
-	background-color:white;
-	position:absolute;
-	top:25%;
-	left:25%;
-	border-radius:50%;
-	pointer-events:none;
-	}*/
-
 
 /*Scoreboard*/
-/*#scoreboard{
-	position: absolute;
-	border:5px solid;
-	border-color: #faf0e9;
-	top:35%;
-	width: 150px;
-	left: 77%;
-	line-height: 1em;
+#scoreboard{
+	border: 5px solid #faf0e9;
+	border-top: 0;
 }
 
+/*Modal*/
+.modal-content{
+	background-color: #e9baba;
+	color: #faf0e9;
+	border-radius: 0;
+	border:5px solid #faf0e9;
+	font-size: 40pt;	
+}
 
-#score{
-	border-top: 5px solid #faf0e9;
-	line-height: 2em;
-}*/
+#restart-btn{
+	border:5px solid #faf0e9;
+	background-color: #e9baba;
+	font-size: 20pt;
+	width: 130px;
+	padding: 3px;
+	text-align: center;
+	float: right;	
+}
+
+#restart-btn:hover{
+	background-color: #c59e9e;
+}
