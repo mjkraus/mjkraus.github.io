@@ -27,7 +27,7 @@ h1{
 	font-size: 40pt;
 }
 
-.button{
+/*.button{
 	width: 150px;
 	position: absolute;
 	cursor: pointer;
@@ -35,7 +35,7 @@ h1{
 	border-color: #faf0e9;
 	background-color: #e9baba; 
 
-}
+}*/
 
 #restart-btn{
 	display: none;
@@ -44,28 +44,29 @@ h1{
 	transform: translate(-50%, -50%);
 }
 
-#start-btn{
+/*#start-btn{
 	top:25%;
 	left: 77%;
-}
+}*/
 
 /*game piece found on http://dabblet.com/gist/5476973
 edited the original to be my own design
 
 Quarter Circles*/
 
-.main {
+.main{
 	position:relative;
-	width:500px;
-	height:500px;
-	margin:0 auto;
+	/* ratio 1:1 keeps Simon board square with bootstrap responsive design*/
+	width: 100%;
+	padding-bottom: 100%;
+
 }
 
 .quarter {
 	position:absolute;
 	width:50%;
 	height:50%;
-	box-shadow:10px 10px 20px grey;
+/*	box-shadow:10px 10px 20px grey;*/
 /*	transition:background-color 0.2s ease-in-out;*/
 }
 
@@ -126,7 +127,7 @@ Quarter Circles*/
 
 
 /*Scoreboard*/
-#scoreboard{
+/*#scoreboard{
 	position: absolute;
 	border:5px solid;
 	border-color: #faf0e9;
@@ -140,4 +141,4 @@ Quarter Circles*/
 #score{
 	border-top: 5px solid #faf0e9;
 	line-height: 2em;
-}
+}*/
